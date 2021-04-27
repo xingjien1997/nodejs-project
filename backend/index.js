@@ -15,6 +15,7 @@ const app = express();
 //         response.send(html);
 //     })
 // });
+//
 
 app.get('/', async (request, response) => {
     response.send(await readFile('../frontend/home.html', 'utf8'));
